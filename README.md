@@ -24,7 +24,7 @@
 
 ------------------------------
 ### <u>Table of Contents</u>
-* <a href="#🌐-about-the-project">About the Project</a>
+* <a href="#🏕️-about-the-project">About the Project</a>
     * <a href="#📖-description">Description</a>
     * <a href="#🦠-known-bugs">Known Bugs</a>
     * <a href="#🛠-built-with">Built With</a>
@@ -32,7 +32,7 @@
 * <a href="#🏁-getting-started">Getting Started</a>
     * <a href="#📋-prerequisites">Prerequisites</a>
     * <a href="#⚙️-setup-and-use">Setup and Use</a>
-* <a href="#🛰️-api-documentation">API Documentation</a>
+* <a href="#🚣‍♀️-api-documentation">API Documentation</a>
 * <a href="#🤝-contributors">Auxiliary</a>
     * <a href="#🤝-contributors">Contributors</a>
     * <a href="#⚖️-license">License</a>
@@ -43,7 +43,7 @@
 ## 🌐 About the Project
 
 ### 📖 Description
-An API that functions as a species archive for (fake)dinosaurs that were alive during the cretaceous period. It utilizes RESTful principles, version control, and pagination is a work in progress. The user is able to interact with/call on the API when using Postman.
+An API that allows users to look up both state and national parks. It utilizes RESTful principles, version control, and pagination is a work in progress. The user is able to interact with/call on the API when using Postman and in a web browser using Swagger UI.
 
 ### 🦠 Known Bugs
 
@@ -106,7 +106,7 @@ An API that functions as a species archive for (fake)dinosaurs that were alive d
 
   #### Download
 
-  1) Navigate to the [Project repository here](https://github.com/Schmelzberry/CretaceousApi.git).
+  1) Navigate to the [Project repository here](https://github.com/Schmelzberry/NationalParkApi.git).
   2) Click 'Clone or download' to reveal the HTTPS url ending with .git and the 'Download ZIP' option.
   3) Click 'Download ZIP' and unextract.
   4) Open by double clicking on any of the files to open in a text editor.
@@ -142,20 +142,11 @@ An API that functions as a species archive for (fake)dinosaurs that were alive d
 
 ------------------------------
 
-## 🛰️ API Documentation
+## 🚣‍♀️ API Documentation
 Explore the API endpoints in Postman or a browser utlizing Swagger UI. 
 
 ### Using Swagger Documentation 
 To build and view the Cretaceous API with Swagger, launch the project using `dotnet watch run` within the production directory 'CretaceousApi', and input the following URL into your browser: `http://localhost:5000`
-
-### Pagination to come!
-
-------------------------------
-
-#### Example Query
-```
-http://localhost:5000/api/animals/?name=rexie
-```
 
 ..........................................................................................
 
