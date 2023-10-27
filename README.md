@@ -40,11 +40,11 @@
 ## 🗺️ About the Project
 
 ### 🏕️ Description
-An API that allows users to look up both state and national parks. It utilizes RESTful principles, version control, and pagination is a work in progress. The user is able to interact with/call on the API when using Postman and in a web browser using Swagger UI.
+An API that allows users to look up both state and national parks. It utilizes RESTful principles, version control, and has full CRUD functionality. The user is able to interact with/call on the API when using Postman and in a web browser using Swagger UI.
 
 ### 🐛 Known Bugs
 
-* This is an API for learning purposes, and to create a robust README with clear install instructions.
+* Need to add data annotations so users cannot enter more than two letters for a date code, four numbers for a year, etc.
 
 ### 🔨 Built With
 * [Visual Studio Code](https://code.visualstudio.com/)
@@ -110,7 +110,7 @@ An API that allows users to look up both state and national parks. It utilizes R
 
   1) Create a new file in the CretaceousApi/CretaceousApi directory named `appsettings.json`
   2) Add in the following code snippet to the new appsettings.json file:
-  (Add appsettings.Development.json???)
+  
  ```
 {
     "Logging": {
@@ -127,12 +127,12 @@ An API that allows users to look up both state and national parks. It utilizes R
 3) Change the server, port, and user id as necessary. Replace 'Password' with your own relevant MySQL password and userId. (set at installation of MySQL).
 
 #### Database
-  1) Navigate to CretaceousApi/CretaceousApi directory using the MacOS Terminal or Windows Powershell (e.g. `cd Desktop/CretaceousApi/CretaceousApi`).
-  2) Run the command `dotnet ef database update` to generate the database through Entity Framework Core.
-  3) (Optional) To update the database with any changes to the code, run the command `dotnet ef migrations add <MigrationsName>` which will use Entity Framework Core's code-first principle to generate a database update. After, run the previous command `dotnet ef database update` to update the database.
+  1) Navigate to NationalParkApi.Solution/NationalParkApi directory using the MacOS Terminal, Windows Powershell, or other preferred terminal (e.g. `cd Desktop/CretaceousApi/CretaceousApi`).
+  2) Run the command `$ dotnet ef database update` to generate the database through Entity Framework Core.
+  3) (Optional) To update the database with any changes to the code, run the command `dotnet ef migrations add <MigrationsName>` which will use Entity Framework Core's code-first principle to generate a database update. After, run the previous command `$ dotnet ef database update` to update the database.
 
   #### Launch the API
-  1) Navigate to CretaceousApi/CretaceousApi directory using the MacOS Terminal or Windows Powershell (e.g. `cd Desktop/CretaceousApi/CretaceousApi`).
+  1) Navigate to NationalParkApi.Solution/NationalParkApi directory using the MacOS Terminal, Windows Powershell, or other preferred terminal (e.g. `cd Desktop/NationalParkApi.Solution/NationalParkApi`).
   2) Run the command `dotnet watch run` to have access to the API in Postman or browser.
 
 ------------------------------
@@ -141,7 +141,7 @@ An API that allows users to look up both state and national parks. It utilizes R
 Explore the API endpoints in Postman or a browser utlizing Swagger UI. 
 
 ### Using Swagger Documentation 
-To build and view the Cretaceous API with Swagger, launch the project using `dotnet watch run` within the production directory 'CretaceousApi', and input the following URL into your browser: `http://localhost:5000`
+To build and view the National Park API with Swagger, launch the project using ```$ dotnet watch run``` within the production directory 'NationalParkApi', and input the following URL into your browser: `http://localhost:5000`
 
 ..........................................................................................
 
@@ -156,46 +156,78 @@ GET /api/{component}/{id}
 PUT /api/{component}/{id}
 DELETE /api/{component}/{id}
 ```
+..........................................................................................
+
+### National Parks in US
+Access information on a select number of National parks across the United States.
 
 #### Example Query
 ```
-http://localhost:5000/api/animals?minimumAge=5
+https://localhost:5001/api/nationalparks/3
 ```
 
 #### Sample JSON Response
 ```
 {
-  "animalId": 1,
-  "species": "Woolly Mammoth",
-  "name": "Matilda the Woolly Mammoth",
-  "age": 8
+  "nationalParkId": 3,
+  "name": "Crater Lake National Park",
+  "stateCode": "OR",
+  "yearCreated": 1902
 }
 ```
-..........................................................................................
-
-### Dinosaurs from Cretaceous Period
-Access information on fake dinosaurs from cretaceous period.
 
 #### HTTP Request
 ```
-GET /api/animals
-POST /api/animals
-GET /api/animals/{id}
-PUT /api/animals/{id}
-DELETE /api/animals/{id}
+GET /api/nationalparks
+POST /api/nationalparks
+GET /api/nationalparks/{id}
+PUT /api/nationalparks/{id}
+DELETE /api/nationalparks/{id}
 ```
 
 #### Path Parameters
 | Parameter | Type | Default | Required | Description |
 | :---: | :---: | :---: | :---: | --- |
-| name | string | none | false | Return matches by name.
-| species | string | none | false | Return any entries that matches the user provided species. |
-| age | int | none | false | Return entries up to the user provided number. |
+| name | string | none | false | Return entries by name.
+| state code | string | none | false | Return entries that match the user provided state code. |
+| year founded | int | none | false | Return entries up to the user provided year. |
+
+..........................................................................................
+
+### State Parks in US
+Access information on a select number of State parks across the United States.
 
 #### Example Query
 ```
-https://localhost:5000/api/animal/?species=shark&name=pip
+https://localhost:5001/api/stateparks/3
 ```
+
+#### Sample JSON Response
+```
+{
+    "stateParkId": 3,
+    "name": "Silver Sands State Park",
+    "stateCode": "CT",
+    "yearCreated": 1960
+}
+```
+
+#### HTTP Request
+```
+GET /api/stateparks
+POST /api/stateparks
+GET /api/stateparks/{id}
+PUT /api/stateparks/{id}
+DELETE /api/stateparks/{id}
+```
+
+#### Path Parameters
+| Parameter | Type | Default | Required | Description |
+| :---: | :---: | :---: | :---: | --- |
+| name | string | none | false | Return entries by name.
+| state code | string | none | false | Return entries that match the user provided state code. |
+| year founded | int | none | false | Return entries up to the user provided year. |
+
 
 ### 🤝 Contributors
 
