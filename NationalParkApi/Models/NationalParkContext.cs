@@ -1,12 +1,12 @@
-using Microsoft.Entity.FrameworkCore;
+using Microsoft.EntityFrameworkCore;
 
 namespace NationalParkApi.Models
 {
-  public class NationalParkApiContext : dbContextOptions
+  public class NationalParkApiContext : DbContext
   {
-    public DbSet <NationalPark> NationalParks { get; set; }
+    public DbSet<NationalPark> NationalParks { get; set; }
 
-    public NationalParkApiContext(dbContextOptions<NationalParkApiContext> options) : base(options)
+    public NationalParkApiContext(DbContextOptions<NationalParkApiContext> options) : base(options)
     {
     }
   }

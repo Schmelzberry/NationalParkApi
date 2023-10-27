@@ -1,4 +1,4 @@
-namespace NationalPark.Models
+namespace NationalParkApi.Models
 {
   public class NationalPark 
   {
