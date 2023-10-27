@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using NationalParkApi.Models;
+using System.Linq;
 
 namespace NationalParkApi.Controllers
 {
@@ -15,11 +16,18 @@ namespace NationalParkApi.Controllers
       _db = db;
     }
 
-    // GET - return list of all National Parks in db
-  [HttpGet]
-  public async Task<ActionResult<IEnumerable<NationalPark>>> Get()
+    // GET - return list of all State Parks in db
+[HttpGet]
+  public async Task<ActionResult<IEnumerable<StatePark>>> Get(int page = 1, int pageSize = 10)
   {
-    return await _db.NationalParks.ToListAsync();
+    var totalCount = await _db.StateParks.CountAsync();
+    var totalParks = (int)Math.Ceiling((decimal)totalCount / pageSize);
+    var parksPerPage = await _db.StateParks
+        .Skip((page-1) * pageSize)
+        .Take(pageSize)
+        .ToListAsync();
+
+    return parksPerPage;
   }
   // GET: api/StateParks/5
   [HttpGet("{id}")]

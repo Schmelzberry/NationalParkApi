@@ -35,7 +35,14 @@ namespace NationalParkApi.Models
           new NationalPark {NationalParkId= 18, Name="Guadalupe Mountains National Park ", StateCode="TX", YearCreated=1972 },
           new NationalPark {NationalParkId= 19, Name="Hawaii Volcanoes National Park", StateCode="HI", YearCreated=1916 },
           new NationalPark {NationalParkId= 20, Name="Denali National Park", StateCode="AK", YearCreated=1917 }
-
+        );
+        builder.Entity<StatePark>()
+        .HasData(
+          new StatePark {StateParkId= 1, Name="Custer State Park", StateCode="SD", YearCreated=1912 },
+          new StatePark {StateParkId= 2, Name="Gulf State Park", StateCode="AL", YearCreated=1939 },
+          new StatePark {StateParkId= 3, Name="Silver Sands State Park", StateCode="CT", YearCreated=1960 },
+          new StatePark {StateParkId= 4, Name="Starved Rock State Park", StateCode="IL", YearCreated=1911 },
+          new StatePark {StateParkId= 5, Name="Chicot State Park", StateCode="LA", YearCreated=1939 }
         );
     }
   }
