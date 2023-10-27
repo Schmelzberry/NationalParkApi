@@ -18,22 +18,6 @@
     <p align="center">
   <small>Initiated October 27nd, 2023.</small>
 </p>
-
-------------------------------
-### <u>Table of Contents</u>
-* <a href="#🗺️-about-the-project">About the Project</a>
-    * <a href="#🏕️-description">Description</a>
-    * <a href="#🐛-known-bugs">Known Bugs</a>
-    * <a href="#🔨-built-with">Built With</a>
-    <!-- * <a href="#🔍-preview">Preview</a> -->
-* <a href="#🏁-getting-started">Getting Started</a>
-    * <a href="#📋-prerequisites">Prerequisites</a>
-    * <a href="#⚙️-setup-and-use">Setup and Use</a>
-* <a href="#🚣‍♀️-api-documentation">API Documentation</a>
-* <a href="#🤝-contributors">Auxiliary</a>
-    * <a href="#🤝-contributors">Contributors</a>
-    * <a href="#⚖️-license">License</a>
-    * <a href="#🌟-acknowledgements">Acknowledgements</a>
     
 ------------------------------
 
@@ -45,6 +29,7 @@ An API that allows users to look up both state and national parks. It utilizes R
 ### 🐛 Known Bugs
 
 * Need to add data annotations so users cannot enter more than two letters for a date code, four numbers for a year, etc.
+* Need to allow for more specific queries from users using various model properties
 
 ### 🔨 Built With
 * [Visual Studio Code](https://code.visualstudio.com/)
@@ -108,7 +93,7 @@ An API that allows users to look up both state and national parks. It utilizes R
 
   #### AppSettings
 
-  1) Create a new file in the CretaceousApi/CretaceousApi directory named `appsettings.json`
+  1) Create a new file in the NationalParkApi.Solution/NationalParkApi directory named `appsettings.json`
   2) Add in the following code snippet to the new appsettings.json file:
   
  ```
@@ -127,7 +112,7 @@ An API that allows users to look up both state and national parks. It utilizes R
 3) Change the server, port, and user id as necessary. Replace 'Password' with your own relevant MySQL password and userId. (set at installation of MySQL).
 
 #### Database
-  1) Navigate to NationalParkApi.Solution/NationalParkApi directory using the MacOS Terminal, Windows Powershell, or other preferred terminal (e.g. `cd Desktop/CretaceousApi/CretaceousApi`).
+  1) Navigate to NationalParkApi.Solution/NationalParkApi directory using the MacOS Terminal, Windows Powershell, or other preferred terminal (e.g. `cd Desktop/NationalParkApi.Solution/NationalParkApi`).
   2) Run the command `$ dotnet ef database update` to generate the database through Entity Framework Core.
   3) (Optional) To update the database with any changes to the code, run the command `dotnet ef migrations add <MigrationsName>` which will use Entity Framework Core's code-first principle to generate a database update. After, run the previous command `$ dotnet ef database update` to update the database.
 
