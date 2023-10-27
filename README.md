@@ -37,7 +37,7 @@
     
 ------------------------------
 
-## 🌐 About the Project
+## 🗺️ About the Project
 
 ### 📖 Description
 An API that allows users to look up both state and national parks. It utilizes RESTful principles, version control, and pagination is a work in progress. The user is able to interact with/call on the API when using Postman and in a web browser using Swagger UI.
@@ -122,7 +122,7 @@ An API that allows users to look up both state and national parks. It utilizes R
     },
     "AllowedHosts": "*",
     "ConnectionStrings": {
-        "DefaultConnection": "Server=localhost;Port=3306;database=coffee_tracker_api;uid=root;pwd=Password;"
+        "DefaultConnection": "Server=localhost;Port=3306;database=national_park_api;uid=root;pwd=Password;"
     }
 }
   ```
