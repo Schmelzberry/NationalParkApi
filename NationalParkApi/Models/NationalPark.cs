@@ -5,6 +5,6 @@ namespace NationalParkApi.Models
     public int NationalParkId { get; set; }
     public string Name { get; set; }
     public string StateCode { get; set; }
-    public int ZipCode { get; set;}
+    public int YearCreated { get; set;}
   }
 }
