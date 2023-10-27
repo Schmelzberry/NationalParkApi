@@ -21,10 +21,10 @@
 
 ------------------------------
 ### <u>Table of Contents</u>
-* <a href="#🏕️-about-the-project">About the Project</a>
-    * <a href="#📖-description">Description</a>
-    * <a href="#🦠-known-bugs">Known Bugs</a>
-    * <a href="#🛠-built-with">Built With</a>
+* <a href="#🗺️-about-the-project">About the Project</a>
+    * <a href="#🏕️-description">Description</a>
+    * <a href="#🐛-known-bugs">Known Bugs</a>
+    * <a href="#🔨-built-with">Built With</a>
     <!-- * <a href="#🔍-preview">Preview</a> -->
 * <a href="#🏁-getting-started">Getting Started</a>
     * <a href="#📋-prerequisites">Prerequisites</a>
@@ -39,14 +39,14 @@
 
 ## 🗺️ About the Project
 
-### 📖 Description
+### 🏕️ Description
 An API that allows users to look up both state and national parks. It utilizes RESTful principles, version control, and pagination is a work in progress. The user is able to interact with/call on the API when using Postman and in a web browser using Swagger UI.
 
-### 🦠 Known Bugs
+### 🐛 Known Bugs
 
 * This is an API for learning purposes, and to create a robust README with clear install instructions.
 
-### 🛠 Built With
+### 🔨 Built With
 * [Visual Studio Code](https://code.visualstudio.com/)
 * [C#](https://docs.microsoft.com/en-us/dotnet/csharp/)
 * [ASP.NET Core MVC 6.0.0](https://docs.microsoft.com/en-us/aspnet/core/mvc/overview?view=aspnetcore-3.1)
@@ -54,8 +54,6 @@ An API that allows users to look up both state and national parks. It utilizes R
 * [Entity Framework Core 6.0.0](https://docs.microsoft.com/en-us/ef/core/)
 * [Swagger - NSwag 18.2.0](https://docs.microsoft.com/en-us/aspnet/core/tutorials/getting-started-with-nswag?view=aspnetcore-3.1&tabs=visual-studio)
 * [Postman](postman.com)
-
-<!-- ### 🔍 Preview -->
 
 ------------------------------
 
