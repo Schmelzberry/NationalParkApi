@@ -52,7 +52,7 @@ An API that allows users to look up both state and national parks. It utilizes R
 * On macOS Mojave or later
   * [Click here](https://dotnet.microsoft.com/en-us/download) to download the .NET Core SDK from Microsoft Corp for macOS.  Version 6.0 is used in this project. 
 #### Install ```dotnet script```
- Enter the command ``dotnet tool install -g dotnet-script`` in Terminal for macOS or PowerShell for Windows.
+ Enter the command ``$ dotnet tool install -g dotnet-script`` in Terminal for macOS or PowerShell for Windows.
 
 #### Install MySQL Workbench
  [Download and install the appropriate version of MySQL Workbench](https://dev.mysql.com/downloads/workbench/).
@@ -81,7 +81,7 @@ An API that allows users to look up both state and national parks. It utilizes R
   4) Clone the repository to your desktop: `$ git clone https://github.com/Schmelzberry/NationalParkApi` and navigate to root directory of project.
   5) Run the command `$ cd CretaceousApi` to enter into the project directory.
   6) View or Edit:
-      * Code Editor - Run the command `code .` to open the project in VisualStudio Code for review and editing.
+      * Code Editor - Run the command `$ code .` to open the project in VisualStudio Code for review and editing.
       * Text Editor - Open by double clicking on any of the files to open in a text editor.
 
   #### Download
@@ -170,7 +170,7 @@ PUT /api/nationalparks/{id}
 DELETE /api/nationalparks/{id}
 ```
 
-#### Path Parameters
+#### National Park Path Parameters
 | Parameter | Type | Default | Required | Description |
 | :---: | :---: | :---: | :---: | --- |
 | name | string | none | false | Return entries by name.
@@ -206,7 +206,7 @@ PUT /api/stateparks/{id}
 DELETE /api/stateparks/{id}
 ```
 
-#### Path Parameters
+#### State Park Path Parameters
 | Parameter | Type | Default | Required | Description |
 | :---: | :---: | :---: | :---: | --- |
 | name | string | none | false | Return entries by name.
@@ -216,7 +216,7 @@ DELETE /api/stateparks/{id}
 
 ### 🤝 Contributors
 
-| Author | GitHub | 
+| LinkedIn | GitHub | 
 |--------|:------:|
 | [Jake Elsberry](https://www.linkedin.com/in/jake-elsberry/) | [Schmelzberry](https://github.com/Schmelzberry)
 
