@@ -4,22 +4,19 @@
 </p>
  <p align="center">
     🛶🛶🛶🛶🛶🛶🛶🛶🛶🛶🛶🛶🛶🛶🛶🛶🛶
-    </p>
-<p align="center">
-    <!-- Project Avatar/Logo -->
-    <br>
+</p>
+  <!-- GitHub Link -->
+  <p align="center">
+    <a href="https://github.com/Schmelzberry">
+        <strong>Schmelzberry</strong>
+    </a>
+  </p>
     <p align="center">
       🛶🛶🛶🛶🛶🛶🛶🛶🛶🛶🛶🛶🛶🛶🛶🛶🛶
     </p>
-    <!-- GitHub Link -->
-    <p align="center">
-        <a href="https://github.com/Schmelzberry">
-            <strong>Schmelzberry</strong>
-        </a>
-    </p>
     <br>
     <p align="center">
-  <small>Initiated October 22nd, 2023. Updated October 26th, 2023.</small>
+  <small>Initiated October 27nd, 2023.</small>
 </p>
 
 ------------------------------
