@@ -1,23 +1,24 @@
 <br>
-<p align="center">
-  <u><big>|| <b>🛶National Park API🛶</b> ||</big></u>
-</p>
+
  <p align="center">
     🛶🛶🛶🛶🛶🛶🛶🛶🛶🛶🛶🛶🛶🛶🛶🛶🛶
 </p>
-  <!-- GitHub Link -->
   <p align="center">
+  🛶🛶🛶🛶<u><big>|| <b>National Park API</b> ||</big></u>🛶🛶🛶🛶
+</p>
+    <p align="center">
+      🛶🛶🛶🛶🛶🛶🛶🛶🛶🛶🛶🛶🛶🛶🛶🛶🛶
+    </p>
+    <p align="center">
+  <small>Initiated October 27nd, 2023</small>
+  <br>
+  <small>By:</small>
+</p>
+ <p align="center">
     <a href="https://github.com/Schmelzberry">
         <strong>Schmelzberry</strong>
     </a>
   </p>
-    <p align="center">
-      🛶🛶🛶🛶🛶🛶🛶🛶🛶🛶🛶🛶🛶🛶🛶🛶🛶
-    </p>
-    <br>
-    <p align="center">
-  <small>Initiated October 27nd, 2023.</small>
-</p>
     
 ------------------------------
 
