@@ -5,6 +5,7 @@ namespace NationalParkApi.Models
   public class NationalParkApiContext : DbContext
   {
     public DbSet<NationalPark> NationalParks { get; set; }
+    public DbSet<StatePark> StateParks { get; set; }
 
     public NationalParkApiContext(DbContextOptions<NationalParkApiContext> options) : base(options)
     {
