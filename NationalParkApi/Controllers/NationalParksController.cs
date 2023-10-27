@@ -1,10 +1,10 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using NationalParks.Model;
+using NationalParkApi.Models;
 
 namespace NationalParkApi.Controllers
 {
-[Route("api/controller")]
+[Route("api/[controller]")]
 [ApiController]
 public class NationalParksController : ControllerBase
 {
@@ -18,7 +18,7 @@ public class NationalParksController : ControllerBase
   [HttpGet]
   public async Task<ActionResult<IEnumerable<NationalPark>>> Get()
   {
-    return await _db.NationalParks.ToListAsync()
+    return await _db.NationalParks.ToListAsync();
   }
   // GET: api/NationalParks/5
   [HttpGet("{id}")]
@@ -32,6 +32,66 @@ public class NationalParksController : ControllerBase
       }
 
       return national;
+    }
+
+      // POST api/NationalParks
+    [HttpPost]
+    public async Task<ActionResult<NationalPark>> Post(NationalPark national)
+    {
+      _db.NationalParks.Add(national);
+      await _db.SaveChangesAsync();
+      return CreatedAtAction(nameof(GetNationalPark), new { id = national.NationalParkId }, national);
+    }
+
+    // PUT: api/NationalParks/3
+    [HttpPut("{id}")]
+    public async Task<IActionResult> Put(int id, NationalPark national)
+    {
+      if (id != national.NationalParkId)
+      {
+        return BadRequest();
+      }
+
+      _db.NationalParks.Update(national);
+
+      try
+      {
+        await _db.SaveChangesAsync();
+      }
+      catch (DbUpdateConcurrencyException)
+      {
+        if (!NationalParkExists(id))
+        {
+          return NotFound();
+        }
+        else
+        {
+          throw;
+        }
+      }
+
+      return NoContent();
+    }
+
+    private bool NationalParkExists(int id)
+    {
+      return _db.NationalParks.Any(entry => entry.NationalParkId == id);
+    }
+
+    // DELETE: api/NationalParks/5
+    [HttpDelete("{id}")]
+    public async Task<IActionResult> DeleteNationalPark(int id)
+    {
+      NationalPark national = await _db.NationalParks.FindAsync(id);
+      if (national == null)
+      {
+        return NotFound();
+      }
+
+      _db.NationalParks.Remove(national);
+      await _db.SaveChangesAsync();
+
+      return NoContent();
     }
 }
 }
