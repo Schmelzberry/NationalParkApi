@@ -186,7 +186,7 @@ DELETE /api/nationalparks/{id}
 
 ###### Note on Ids:
 
-* Always include an ID in the URL and in the json body of a response, as the application needs to know which object the user is trying to reference. 
+* Always include an ID(whether it be a State or National Park) in the URL and in the json body of a response, as the application needs to know which park the user is trying to reference. 
 
 * This also applies when using the DELETE functionality.
 
