@@ -31,6 +31,10 @@ An API that allows users to look up both state and national parks. It utilizes R
 
 Users can select how many results they want to see when creating a GET request for both National and State Parks.
 
+Example of Pagination Request:
+
+```https://localhost:5001/api/stateparks?page=1&pageSize=3```
+
 When making a GET request, specify the following:
 
 * page = The specific page you would like to see
@@ -186,9 +190,7 @@ DELETE /api/nationalparks/{id}
 
 ###### Note on Ids:
 
-* Always include an ID(whether it be a State or National Park) in the URL and in the json body of a response, as the application needs to know which park the user is trying to reference. 
-
-* This also applies when using the DELETE functionality.
+* Always include an ID(whether it be a State or National Park) in the URL and in the json request body , as the application needs to know which park the user is trying to reference. 
 
 * When using a POST request, do not include an ID, as the application will generate that for you.
 
