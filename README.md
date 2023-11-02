@@ -27,12 +27,25 @@
 ### 🏕️ Description
 An API that allows users to look up both state and national parks. It utilizes RESTful principles, version control, and has full CRUD functionality. The user is able to interact with/call on the API when using Postman and in a web browser using Swagger UI.
 
+### 📃 Further Exploration - Pagination
+
+Users can select how many results they want to see when creating a GET request for both National and State Parks.
+
+When making a GET request, specify the following:
+
+* page = The specific page you would like to see
+* pageSize = how many results will be on a page
+
+Resource Reference:  
+* [CodeMaze](https://code-maze.com/paging-aspnet-core-webapi/https://code-maze.com/paging-aspnet-core-webapi/)
+* [Microsoft](https://learn.microsoft.com/en-us/aspnet/core/data/ef-mvc/sort-filter-page?view=aspnetcore-7.0)
+
 ### 🐛 Known Bugs
 
 * Need to add data annotations so users cannot enter more than two letters for a date code, four numbers for a year, etc.
 * Need to allow for more specific queries from users using various model properties
 
-### 🔨 Built With
+### 🔨 Built With (Technologies Used)
 * [Visual Studio Code](https://code.visualstudio.com/)
 * [C#](https://docs.microsoft.com/en-us/dotnet/csharp/)
 * [ASP.NET Core MVC 6.0.0](https://docs.microsoft.com/en-us/aspnet/core/mvc/overview?view=aspnetcore-3.1)
@@ -171,6 +184,24 @@ PUT /api/nationalparks/{id}
 DELETE /api/nationalparks/{id}
 ```
 
+###### Note on Ids:
+
+* Always include an ID in the URL and in the json body of a response, as the application needs to know which object the user is trying to reference. 
+
+* This also applies when using the DELETE functionality.
+
+* When using a POST request, do not include an ID, as the application will generate that for you.
+
+```
+{
+  "nationalParkId": 3,
+  "name": "Crater Lake National Park",
+  "stateCode": "OR",
+  "yearCreated": 1902
+}
+```
+
+
 #### National Park Path Parameters
 | Parameter | Type | Default | Required | Description |
 | :---: | :---: | :---: | :---: | --- |
@@ -234,5 +265,3 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-```
-
