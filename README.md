@@ -46,8 +46,6 @@ Resource Reference:
 
 ### 🐛 Known Bugs
 
-* Need to add data annotations so users cannot enter more than two letters for a date code, four numbers for a year, etc.
-* Need to allow for more specific queries from users using various model properties
 
 ### 🔨 Built With (Technologies Used)
 * [Visual Studio Code](https://code.visualstudio.com/)
