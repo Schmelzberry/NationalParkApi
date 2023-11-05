@@ -211,9 +211,9 @@ DELETE /api/nationalparks/{id}
 #### National Park Path Parameters
 | Parameter | Type | Default | Required | Description |
 | :---: | :---: | :---: | :---: | --- |
-| name | string | none | false | Return entries by name.
-| state code | string | none | false | Return entries that match the user provided state code. |
-| year founded | int | none | false | Return entries up to the user provided year. |
+| name | string | none | true | Return entries by name.
+| state code | string | none | true | Return entries that match the user provided state code. |
+| year founded | int | none | true | Return entries up to the user provided year. |
 
 ..........................................................................................
 
@@ -247,9 +247,9 @@ DELETE /api/stateparks/{id}
 #### State Park Path Parameters
 | Parameter | Type | Default | Required | Description |
 | :---: | :---: | :---: | :---: | --- |
-| name | string | none | false | Return entries by name.
-| state code | string | none | false | Return entries that match the user provided state code. |
-| year founded | int | none | false | Return entries up to the user provided year. |
+| name | string | none | true | Return entries by name.
+| state code | string | none | true | Return entries that match the user provided state code. |
+| year founded | int | none | true | Return entries up to the user provided year. |
 
 
 ### 🤝 Contributors
