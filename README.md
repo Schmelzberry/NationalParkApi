@@ -46,6 +46,7 @@ Resource Reference:
 
 ### 🐛 Known Bugs
 
+No known bugs currently.
 
 ### 🔨 Built With (Technologies Used)
 * [Visual Studio Code](https://code.visualstudio.com/)
