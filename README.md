@@ -165,6 +165,9 @@ DELETE /api/{component}/{id}
 Access information on a select number of National parks across the United States.
 
 #### Example Query
+
+###### *Returns a National Park matching the id provided at end of query string
+
 ```
 https://localhost:5001/api/nationalparks/3
 ```
@@ -193,6 +196,8 @@ DELETE /api/nationalparks/{id}
 * Always include an ID(whether it be a State or National Park) in the URL and in the json request body , as the application needs to know which park the user is trying to reference. 
 
 * When using a POST request, do not include an ID, as the application will generate that for you.
+
+#### Example Query
 
 ```
 {
