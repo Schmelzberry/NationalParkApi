@@ -96,7 +96,7 @@ No known bugs currently.
   2) Click 'Clone or download' to reveal the HTTPS url ending with .git and the 'Download ZIP' option.
   3) Open up your system Terminal or GitBash, navigate to your desktop with the command: `$ cd Desktop`, or whichever location suits you best.
   4) Clone the repository to your desktop: `$ git clone https://github.com/Schmelzberry/NationalParkApi` and navigate to root directory of project.
-  5) Run the command `$ cd CretaceousApi` to enter into the project directory.
+  5) Run the command `$ cd NationalParkApi` to enter into the project directory.
   6) View or Edit:
       * Code Editor - Run the command `$ code .` to open the project in VisualStudio Code for review and editing.
       * Text Editor - Open by double clicking on any of the files to open in a text editor.
